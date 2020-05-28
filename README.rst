@@ -9,11 +9,11 @@ starts the Django project.
 
 Connecting from a browser's JavaScript konsole:
 
-  c = new WebSocket("ws://localhost/ws/foo/")
+  c = new WebSocket("ws://localhost:8000/ws/foo/")
 
 is successful and prints "accepting". A connection to
 
-  c = new WebSocket("ws://localhost/ws/bar/")
+  c = new WebSocket("ws://localhost:8000/ws/bar/")
 
 prints "not accepting => return" and doesn't get accepted.
 But I get exception tracebacks. First when closing the
